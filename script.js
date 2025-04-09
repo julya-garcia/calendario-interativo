@@ -14,7 +14,7 @@ function colorirDia(){
     }
     else if((days > 0) && (days < 31)){
         // Se o número de dias está no intervalo valor, aplicará a cor na célula do calendário
-        let td = calendar.getElementsByTagName('td');
+        let td = calendar.getElementsByTagName('td')[parseInt(days)+1];
         td.style.backgroundColor = color;
     }
     else{
@@ -39,7 +39,7 @@ function colorirDia(){
         if(corEstilo === "rgb(173,216,230)" || corEstilo === "lightblue"){
             contadorAzul++;
         }
-        else if(corEstilo === "rgb(152, 215, 152)" || corEstilo === "palegreen"){
+        else if(corEstilo === "rgb(152, 251, 152)" || corEstilo === "palegreen"){
             contadorVerde++;
         }
         else if(corEstilo === "rgb(255, 182, 193)" || corEstilo === "lightpink"){
